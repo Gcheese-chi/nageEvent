@@ -1,0 +1,65 @@
+.menu_area{
+    z-index: 5;
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 3%;
+    width: 280px;
+    height: 600px;
+    background-image: url(../img/leftbar.png);
+    .menu_pc{
+        font-family: CHei3HK;
+        font-size: 30px;
+        font-weight: 800;
+        color: white;
+        margin-top: 105px;
+        li{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 5px 0;
+            cursor: pointer;
+
+            &:hover {               
+                transform: scale(1.02);
+                transition: .2s;
+                text-shadow: 
+                0 0 5px rgba($color: #cc0000, $alpha: 1.0),
+                0 0 10px rgba($color: #cc0000, $alpha: 1.0),
+                0 0 10px rgba($color: #cc0000, $alpha: 1.0);
+                &::before {
+                    content: url('../img/menuarrowl.png');
+                    position: absolute;
+                    left: 12px;
+                    top: 20%;
+                }
+
+                &::after {
+                    content: url('../img/menuarrowR.png');
+                    position: absolute;
+                    right: 12px;
+                    top: 20%;
+                }
+
+
+            }
+            
+        }
+        .up{
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            &:hover {
+                transform: scale(1.05);
+                transition: .2s;
+            }
+        }
+
+    }
+
+    
+}

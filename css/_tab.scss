@@ -1,0 +1,60 @@
+.tabbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 303px;
+        height: 95px;
+        float: left;
+        top: 20px;
+        margin: 0 80px;
+        font-family: CHei3HK;
+        font-size: 40px;
+        font-weight: 800;
+        color: white;
+        list-style: none;
+        text-shadow:
+            0 0 5px rgba($color: #cc0000, $alpha: 1.0),
+            0 0 10px rgba($color: #cc0000, $alpha: 1.0),
+            0 0 10px rgba($color: #cc0000, $alpha: 1.0);
+        cursor: pointer;
+        background-image: url(../img/tabbg.png);
+
+        &:hover {
+            transform: scale(1.02);
+            transition: .2s;
+            background-image: url(../img/tabbuttonbg_hover.png);
+
+            text-shadow:
+                0 0 5px rgba($color: #05259e, $alpha: 1.0),
+                0 0 10px rgba($color: #05259e, $alpha: 1.0),
+                0 0 10px rgba($color: #05259e, $alpha: 1.0);
+
+        }
+    }
+}
+
+.content {
+    display: none;
+
+    &.active {
+        display: block;
+    }
+
+}
+
+#tab1 {
+    width: 1915px;
+}
+
+#tab2 {
+    width: 1915px;
+}
+
+.section1 {
+    width: 1915px;
+}

@@ -1,0 +1,101 @@
+.PopupBtn{
+    background-color: transparent;
+    border-style: none;
+}
+
+.mask{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+
+}
+.windows1{
+    position: fixed;
+    justify-content: center;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: none;
+    top: 0;
+    
+
+    .box1{
+        max-width: 1147px;
+        width: 100%;
+        max-height: 569px;
+        height: 100%;
+        background-image: url(../img/popupbg.png);
+        top: 50%;
+        left: 50%;
+        @extend %bg-cover;
+        position: fixed;
+        transform: translate(-50%, -50%);
+        //margin: 0 auto;
+        animation: popup 0.3s ease-in-out;
+
+        @keyframes popup{
+            0% {
+                opacity: 0;
+                transform: translate(-50%, -50%) scale(0);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+            }
+        }
+
+        .text1{
+            font-family: 'Noto Sans TC', sans-serif;
+            display: flex;
+            padding: 60px;
+            font-size: 20px;
+            text-align: center;
+            //top: 50%;
+            //left: 50%;
+            flex-direction: column;
+            align-items: center;
+            line-height: 1.8;
+            color: #001255;
+            
+            .title{
+                font-family: 'Noto Serif TC', serif;
+                font-size: 45px;
+                font-weight: 800;
+                color: #ebf5ff;
+                text-shadow: 
+                0 0 5px rgba($color: #001255, $alpha: 0.5),
+                0 0 10px rgba($color: #001255, $alpha: 0.8),
+                0 0 10px rgba($color: #001255, $alpha: 1.0);
+            }
+
+            .left{
+                padding: 20px;
+                font-weight: 500;
+                text-align: left;
+            }
+        }
+
+        
+
+        
+    }
+
+        .btnX{
+            position: absolute;
+            width: 49px;
+            height: 49px;
+            right: 400px;
+            bottom: 720px;
+            background-color: transparent;
+            background-size: cover;
+            border-style: none;
+            background-image: url('../img/X.png');
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+
+
+        }
+
+}

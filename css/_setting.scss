@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@500;600;700;900&display=swap');
+
+* {
+    position: relative;
+    box-sizing: border-box;
+
+}
+
+@font-face {
+    font-family: CHei3HK;
+    src: local("CHei3HK"),
+        url('../font/MengNaFanBanHei-1.otf') format("woff");
+    font-display: swap;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    // overflow-x: hidden;
+}
+
+a {
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 4vh 0 9vh 0;
+
+}
+
+.wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    // overflow: hidden !important;
+}
+
+h1 {
+    color: white;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 22px;
+    font-weight: 450;
+}
+
+h2 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+}
+
+h3 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: rgba($color: #a15ae9, $alpha: 1.0);
+}
+
+h4 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba($color: #c2c8ff, $alpha: 1.0);
+}
+
+h5 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: #a15ae9;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    border-collapse: collapse;
+    max-width: 1137px;
+    border: none;
+    word-break: break-all;
+    margin: 30px 0;
+    line-height: 15px;
+
+    th {
+        font-family: 'Noto Sans TC', sans-serif;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 1.2;
+        background-color: white;
+        border: white 2px solid;
+        vertical-align: middle;
+        padding: 15px;
+        color: #05259e;
+    }
+
+    td {
+        font-family: 'Noto Sans TC', sans-serif;
+        line-height: 1.5;
+        font-size: 22px;
+        border: white 2px solid;
+        padding: 10px;
+        border-collapse: separate;
+        vertical-align: middle;
+    }
+
+
+    // 雙色表格
+    tr:nth-child(odd) {
+        background-color: rgba($color: #5e2a2a, $alpha: 0.5);
+    }
+
+    tr:nth-child(even) {
+        background-color: rgba($color: #2a2a45, $alpha: 1.0);
+    }
+
+
+}
+
+
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #05259e;
+}
+
+::-webkit-scrollbar-track {
+    background: #2a2a45;
+}
+
+
+%hover {
+    transition: all 0.3s ease-in-out;
+}
+
+%bg-cover {
+    position: relative;
+
+    background: {
+        size: cover;
+        position: center;
+        repeat: no-repeat;
+    }
+}
+
+%pic-light {
+    margin: 20px 0;
+    border: 5px solid white;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8),
+        inset 0 0 10px rgba(255, 255, 255, 0.8);
+}
